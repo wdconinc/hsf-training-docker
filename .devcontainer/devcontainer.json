@@ -1,0 +1,6 @@
+{
+  "image": "docker:dind",
+  "hostRequirements": {
+    "cpus": 2
+  }
+}
