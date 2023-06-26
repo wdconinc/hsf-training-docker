@@ -2,5 +2,7 @@
   "image": "docker:dind",
   "hostRequirements": {
     "cpus": 2
-  }
+  },
+  "privileged": true,
+  "postStartCommand": "/usr/local/bin/dockerd-entrypoint.sh"
 }
