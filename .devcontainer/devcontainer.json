@@ -3,6 +3,17 @@
   "hostRequirements": {
     "cpus": 2
   },
+  "onCreateCommand": "apk add git",
+  "postStartCommand": "/usr/local/bin/dockerd-entrypoint.sh",
   "privileged": true,
-  "postStartCommand": "/usr/local/bin/dockerd-entrypoint.sh"
+  "customizations": {
+    "codespaces": {
+      "openFiles": []
+    },
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
 }
